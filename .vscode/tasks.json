@@ -12,6 +12,15 @@
             "command": "make -j8"
         },
         {
+            "label": "flash",
+            "type": "shell",
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "command": "make flash-st"
+        },
+        {
             "label": "clean",
             "type": "shell",
             "group": {
