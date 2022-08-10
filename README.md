@@ -21,6 +21,8 @@ There are a few options to build the CMake project. Approaches differ in depende
 
 [Third way](docs/build-nix.md) is using nix with provided `flake.nix`.  
 
+[Fourth way](docs/build-native-in-container.md) is to use the provided [Makefile](Makefile) for native development on your computer in a devcontainer, You have to install the required dependencies on your computer (VSCode, git, Docker) and, then, open the development folder (stm32) in a container (ONLY tested on linux).
+
 ## Code style
 
 Before committing code, format all source files. I have provided a set of [rules](.clang-format) for `clang-format`, which you can apply to all source files.  
