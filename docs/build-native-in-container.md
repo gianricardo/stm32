@@ -23,6 +23,7 @@ Install the following packages:
 * git
 * vscode
 * docker
+* stlink-tools (stlink-tools:u20.04 or stlink:f35)
 
 The docker image is based on fedora 35.
 ARM compiler version is 11.2 in the container for enabling the latest C++20 features. 
