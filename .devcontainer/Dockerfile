@@ -20,7 +20,7 @@ RUN usermod --shell /bin/bash $USERNAME
 
 
 RUN dnf update -y
-RUN dnf install -y java-11-openjdk-headless git ant cmake zlib-devel nano libxml2-devel libxslt-devel gdb cppcheck gdb-gdbserver valgrind ccache graphviz doxygen gcc gcovr lcov python3 python3-pip clang-tools-extra clang-analyzer javacc SFML SFML-devel glx-utils mesa-dri-drivers lldb curl ninja-build dos2unix wget lbzip2 make glibc-locale-source findutils clang-tools-extra stlink stlink-gui openocd ncurses-libs ncurses-compat-libs python3.6
+RUN dnf install -y java-11-openjdk-headless git ant cmake zlib-devel nano libxml2-devel libxslt-devel gdb cppcheck gdb-gdbserver valgrind ccache graphviz doxygen gcc gcovr lcov python3 python3-pip clang-tools-extra clang-analyzer javacc SFML SFML-devel glx-utils mesa-dri-drivers lldb curl ninja-build dos2unix wget lbzip2 make glibc-locale-source findutils clang-tools-extra stlink stlink-gui openocd ncurses-libs ncurses-compat-libs python3.8
 RUN pip3 install cmake-format 
 RUN pip3 install conan 
 
@@ -45,6 +45,8 @@ RUN rm -rf /tmp/*
 #RUN curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
 
 WORKDIR /workspaces
+
+RUN dnf install -y python3-pyasn1-modules
 
 RUN dnf clean packages
 

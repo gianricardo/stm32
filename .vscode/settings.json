@@ -1,7 +1,7 @@
 {
     // Change path to your system, use `which` to find the location of the executables
     // Somehow, cortex-debug wants absolute path, even if the package is present in $PATH
-    "cortex-debug.armToolchainPath": "/opt/gcc-arm-none-eabi-11.2/bin",
+    "cortex-debug.armToolchainPath": "/opt/gcc-arm-none-eabi-11.3/bin",
     "cortex-debug.JLinkGDBServerPath": "/usr/bin/JLinkGDBServerCLExe",
     "nixEnvSelector.nixFile": "${workspaceRoot}/flake.nix",
     "cmake.configureArgs": [
